@@ -85,10 +85,9 @@
         var x = localStorage.length;
         var y = Object.keys(localStorage);
         const startsWithN = y.filter((yy) => yy.startsWith("post"));
-        var retrievedObject = localStorage.getItem(yy);
-        console.log(retrievedObject);
+        var retrievedObject = localStorage.getItem(startsWithN);
         console.log(startsWithN);
-        var retrievedObject = localStorage.getItem('testObject');
+        console.log(retrievedObject);
         function handleFormSubmit(event) {
             event.preventDefault();
             
