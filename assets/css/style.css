@@ -232,7 +232,7 @@ h2{
         background-color: #ED6B5D;
         border-radius: 3px;
     }
-    nav{
+    .desktop{
         display: none;
     }
 }
