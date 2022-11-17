@@ -1,10 +1,11 @@
 body{
     font-family: 'Outfit', sans-serif;
+}
+/* HEADER STYLE */
+.header{
     margin-right: 10vw;
     margin-left: 10vw;
 }
-/* HEADER STYLE */
-
 .header nav{
     display: flex;
     width: 100%;
@@ -34,6 +35,8 @@ body{
 
 .hero{
     height: 80vh;
+    margin-right: 10vw;
+    margin-left: 10vw;
 }
 
 /* PARTNERS STYLE */
@@ -57,6 +60,11 @@ body{
 
 /* VALUES STYLE */
 
+.values{
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+
 .values .values-description{
     display: flex;
 }
@@ -66,6 +74,11 @@ body{
 }
 
 /* FEATURES STYLE */
+
+.features{
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
 
 .features .features-description .row{
     display: flex;
