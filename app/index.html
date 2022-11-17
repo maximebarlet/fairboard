@@ -96,7 +96,6 @@
         const formJSON = Object.fromEntries(data.entries());
         console.log(formJSON);
 
-        const fs = require('fs');
         const dir = '/posts';
 
         fs.readdir(dir, (err, files) => {
