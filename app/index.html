@@ -103,7 +103,7 @@
             a.download = fileName;
             a.click();
         }
-        download(formJSON, 'posts/json.txt', 'text/plain');
+        write(formJSON, 'posts/json.txt', 'text/plain');
 
         const results = document.querySelector('.results pre');
         results.innerText = JSON.stringify(formJSON, null, 2);
