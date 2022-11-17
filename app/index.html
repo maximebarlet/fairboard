@@ -19,9 +19,10 @@
         const startsWithN = y.filter((yy) => yy.startsWith("post"));
 
         console.log(startsWithN);
-        startsWithN.forEach(element => console.log(localStorage.getItem(element)));
+        startsWithN.forEach(element => localStorage.getItem(element));
         window.onload = function(){
             document.getElementById('output').innerHTML = startsWithN.length;
+            document.getElementById('output2').innerHTML = startsWithN.forEach(element => localStorage.getItem(element));
         }
     </script>
     <div class="sidebar">
@@ -41,6 +42,7 @@
         </div>
         <div id="schedule">
             <h2>Planning</h2>
+            <p id="output2"></p>
         </div>
         <div id="inbox">
             <h2>Messagerie</h2>
