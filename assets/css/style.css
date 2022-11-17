@@ -381,6 +381,7 @@ button {
     position: fixed;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .sidebar a{
     color: #FFFFFF;
