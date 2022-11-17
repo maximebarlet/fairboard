@@ -1,6 +1,7 @@
 body{
     font-family: 'Outfit', sans-serif;
     margin: 0px !important;
+    overflow-x: hidden;
 }
 /* HEADER STYLE */
 .header{
