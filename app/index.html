@@ -97,14 +97,16 @@
         const formJSON = Object.fromEntries(data.entries());
         console.log(formJSON);
 
-        function download(content, fileName, contentType) {
-            var a = document.createElement("a");
-            var file = new Blob([content], {type: contentType});
-            a.href = URL.createObjectURL(file);
-            a.download = fileName;
-            a.click();
+        const fs = require('fs');
+
+        const content = 'Some content!';
+
+        fs.writeFile('posts/json.json', formJSON, err => {
+        if (err) {
+            console.error(err);
         }
-        write(formJSON, 'posts/json.txt', 'text/plain');
+        // file written successfully
+        });
 
         const results = document.querySelector('.results pre');
         results.innerText = JSON.stringify(formJSON, null, 2);
