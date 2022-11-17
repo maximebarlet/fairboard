@@ -86,11 +86,8 @@
         var y = Object.keys(localStorage);
         const startsWithN = y.filter((yy) => yy.startsWith("post"));
 
-        var found = startsWithN.find(function (element) {
-            return element;
-        });
         console.log(startsWithN);
-        console.log(found);
+        console.log(startsWithN.every);
         function handleFormSubmit(event) {
             event.preventDefault();
             
