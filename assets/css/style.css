@@ -58,6 +58,11 @@ body{
 
 /* CONCEPT STYLE */
 
+.concept{
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+
 /* VALUES STYLE */
 
 .values{
@@ -88,6 +93,6 @@ body{
     color: #FFFFFF;
     width: 50%;
 }
-.features .features-description .row:nth-child(2) .feature-box:nth-child(2),.features .features-description .row:nth-child(2) .feature-box:nth-child(1){
+.features .features-description .row:nth-child(2) .feature-box:nth-child(2),.features .features-description .row:nth-child(1) .feature-box:nth-child(1){
     width: 50%;
 }
