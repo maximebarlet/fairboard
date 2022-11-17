@@ -87,7 +87,7 @@
         const startsWithN = y.filter((yy) => yy.startsWith("post"));
 
         console.log(startsWithN);
-        startsWithN.forEach(element => console.log(element));
+        startsWithN.forEach(element => console.log(localStorage.getItem(element)));
 
         function getPosts(params) {
             
