@@ -89,6 +89,7 @@
         </div>
     </div>
     <script>
+        var x = localStorage.length;
         function handleFormSubmit(event) {
         event.preventDefault();
         
@@ -96,7 +97,7 @@
         
         const formJSON = Object.fromEntries(data.entries());
         console.log(formJSON);
-        var x = localStorage.length;
+
         console.log(x);
         // Put the object into storage
         localStorage.setItem('post ${x}', JSON.stringify(formJSON));
