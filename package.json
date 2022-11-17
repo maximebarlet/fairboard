@@ -1,0 +1,20 @@
+{
+  "name": "fairboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "front/index.html",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build front/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maximebarlet/fairboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maximebarlet/fairboard/issues"
+  },
+  "homepage": "https://github.com/maximebarlet/fairboard#readme"
+}
