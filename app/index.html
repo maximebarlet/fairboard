@@ -97,13 +97,9 @@
         const formJSON = Object.fromEntries(data.entries());
         console.log(formJSON);
 
-        const fs = require('fs');
-
-        const content = 'Some content!';
-
         // Put the object into storage
         localStorage.setItem('testObject', JSON.stringify(formJSON));
-        
+
         var retrievedObject = localStorage.getItem('testObject');
 
         const results = document.querySelector('.results pre');
