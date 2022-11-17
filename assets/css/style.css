@@ -13,7 +13,7 @@ h2{
     font-size: 3rem;
     line-height: 1.2;
     font-weight: 700;
-    color: #fff;
+    color: #000;
   }
   .animation-headline.slide span {
     display: inline-block;
@@ -170,7 +170,7 @@ h2{
       transform: translateY(100%);
     }
   }
-  
+
 /* HEADER STYLE */
 .header{
     margin-right: 10vw;
