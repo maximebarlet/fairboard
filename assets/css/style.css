@@ -43,6 +43,7 @@ body{
     display: flex;
     background-color: #5D7963;
     justify-content: space-around;
+    align-items: center;
 }
 
 .partners-logo img{
