@@ -24,9 +24,9 @@
         window.onload = function(){
             document.getElementById('output').innerHTML = startsWithN.length;
             for (let index = 0; index < startsWithN.length; ++index) {
-                const element = startsWithN[index];
+                //const element = startsWithN[index];
                 console.log(element);
-                document.getElementById('output2').innerHTML = '<span>' + JSON.parse(JSON.stringify(localStorage.getItem(element[index].social))) + '</span>';
+                document.getElementById('output2').innerHTML = '<span>' + JSON.parse(JSON.stringify(localStorage.getItem(startsWithN[index].social))) + '</span>';
             }
         }
     </script>
