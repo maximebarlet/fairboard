@@ -22,8 +22,8 @@
         startsWithN.forEach(element => localStorage.getItem(element));
         window.onload = function(){
             document.getElementById('output').innerHTML = startsWithN.length;
-            startsWithN.forEach(element => console.log(localStorage.getItem(element.social)));
-            document.getElementById('output2').innerHTML = element.social;
+            startsWithN.forEach(element => console.log(localStorage.getItem(element)));
+            document.getElementById('output2').innerHTML = startsWithN.forEach(element => JSON.stringify(localStorage.getItem(element)));
         }
     </script>
     <div class="sidebar">
