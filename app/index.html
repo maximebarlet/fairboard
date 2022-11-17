@@ -99,7 +99,7 @@
         var x = localStorage.length;
         console.log(x);
         // Put the object into storage
-        localStorage.setItem('post', JSON.stringify(formJSON));
+        localStorage.setItem('post ${x}', JSON.stringify(formJSON));
 
         var retrievedObject = localStorage.getItem('testObject');
 
