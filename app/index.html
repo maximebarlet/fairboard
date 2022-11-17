@@ -20,8 +20,9 @@
 
         console.log(startsWithN);
         startsWithN.forEach(element => console.log(localStorage.getItem(element)));
-
-        document.getElementById('output').innerHTML = x;
+        window.onload = function(){
+            document.getElementById('output').innerHTML = x;
+        }
     </script>
     <div class="sidebar">
         <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Créer un post</a>
