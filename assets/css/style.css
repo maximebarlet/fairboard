@@ -382,3 +382,12 @@ button {
     width: 80%;
     height: 100vh;
 }
+.viewer #impacts{
+    height: 100vh;
+}
+.viewer #schedule{
+    height: 100vh;
+}
+.viewer #inbox{
+    height: 100vh;
+}
