@@ -233,7 +233,7 @@ h2{
         border-radius: 3px;
     }
     .desktop{
-        display: none;
+        display: none !important;
     }
 }
 .menu {
