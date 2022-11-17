@@ -21,7 +21,7 @@
         console.log(startsWithN);
         startsWithN.forEach(element => console.log(localStorage.getItem(element)));
         window.onload = function(){
-            document.getElementById('output').innerHTML = x;
+            document.getElementById('output').innerHTML = startsWithN.length;
         }
     </script>
     <div class="sidebar">
@@ -33,7 +33,7 @@
     <div class="viewer">
         <div id="impacts">
             <h2>Impacts</h2>
-            <h3>Vous avez posté<p id="output"></p></h3>
+            <h3>Vous avez posté<span id="output"></span> posts</h3>
         </div>
         <div id="schedule">
             <h2>Planning</h2>
