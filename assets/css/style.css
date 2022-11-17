@@ -77,6 +77,10 @@ h2{
     margin-left: 10vw;
 }
 
+.values h4{
+    text-transform: uppercase;
+}
+
 .values .values-description{
     display: flex;
     justify-content: space-between;
