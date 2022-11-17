@@ -1,3 +1,5 @@
+/* HEADER STYLE */
+
 .header nav{
     display: flex;
     width: 100%;
@@ -21,4 +23,20 @@
 
 .header nav ul li{
     list-style: none;
+}
+
+/* HERO STYLE */
+
+.hero{
+    height: 80vh;
+}
+
+/* PARTNERS STYLE */
+
+.partners{
+    width: 100%;
+}
+.partners-logo{
+    display: flex;
+    background-color: #5D7963;
 }
