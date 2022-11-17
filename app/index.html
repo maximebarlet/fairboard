@@ -54,6 +54,19 @@
                         <label for="message">Rédiger le post</label>
                         <textarea id="message" name="message" rows="6" cols="65"></textarea>
                       </div>
+
+                      <div class="input-group">
+                        <label for="start">Start date:</label>
+                        <input type="date" id="start" name="trip-start"
+                            value="2018-07-22"
+                            min="2018-01-01" max="2018-12-31">
+                      </div>
+
+                      <div class="input-group">
+                        <label for="appt">Choose a time for your meeting:</label>
+                        <input type="time" id="appt" name="appt"
+                            min="00:00" max="23:59" required>
+                      </div>
                       
                       <button type="submit">Planifer</button>
                     </form>
@@ -77,9 +90,6 @@
   const data = new FormData(event.target);
   
   const formJSON = Object.fromEntries(data.entries());
-
-  // for multi-selects, we need special handling
-  formJSON.snacks = data.getAll('snacks');
   
   const results = document.querySelector('.results pre');
   results.innerText = JSON.stringify(formJSON, null, 2);
