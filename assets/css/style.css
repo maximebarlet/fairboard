@@ -216,19 +216,26 @@ h2{
     text-transform: uppercase;
     font-weight: 900;
 }
-
+@media (orientation: landscape){
+    nav-mobile{
+        display: none;
+    }
+}
 @media (orientation: portrait){
     .menu__item--1,
-.menu__item--2,
-.menu__item--3 {
-  position: relative;
-  width: 80px;
-  height: 10px;
-  margin-bottom: 10px;
-  background-color: #ED6B5D;
-  border-radius: 3px;
+    .menu__item--2,
+    .menu__item--3 {
+        position: relative;
+        width: 80px;
+        height: 10px;
+        margin-bottom: 10px;
+        background-color: #ED6B5D;
+        border-radius: 3px;
+    }
+    nav{
+        display: none;
+    }
 }
-
 .menu {
   transition: transform 500ms ease 0s;
 }
