@@ -84,7 +84,8 @@
     <script>
         var x = localStorage.length;
         var y = Object.keys(localStorage);
-        console.log(y);
+        const startsWithN = y.filter((yy) => yy.startsWith("post"));
+        console.log(startsWithN);
         function handleFormSubmit(event) {
         event.preventDefault();
         
