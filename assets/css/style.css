@@ -211,6 +211,12 @@ h2{
     margin-left: 10vw;
 }
 
+.hero .cta{
+    background-color: #5D7963;
+    text-decoration: none;
+    padding: 5px;
+}
+
 /* PARTNERS STYLE */
 
 .partners{
