@@ -377,6 +377,7 @@ button {
     width: 20%;
     background-color: #5D7963;
     height: 100vh;
+    overflow-y: hidden;
 }
 .viewer{
     width: 80%;
