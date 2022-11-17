@@ -62,3 +62,16 @@ body{
     background-color: #5D7963;
     width: 33%;
 }
+
+/* FEATURES STYLE */
+
+.features .features-description .row{
+    display: flex;
+}
+.features .features-description .row .feature-box:nth-child(1),.features .features-description .row .feature-box:nth-child(4){
+    background-color: #5D7963;
+    width: 33%;
+}
+.features .features-description .row .feature-box:nth-child(2),.features .features-description .row .feature-box:nth-child(3){
+    width: 33%;
+}
