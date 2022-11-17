@@ -51,4 +51,13 @@ body{
     height: 10%;
 }
 
-/*
+/* CONCEPT STYLE */
+
+/* VALUES STYLE */
+
+.values .values-description{
+    display: flex;
+}
+.values .values-description .value-box{
+    background-color: #5D7963;
+}
