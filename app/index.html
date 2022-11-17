@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <script defer src="index.js" charset="utf-8"></script>
+</head>
+<body>
+    <div class="container-app">
+        <div>
+            <ul>
+                <li><a href="javascript:App.navigateTo('/home')">Home</a> </li>
+                <li><a href="javascript:App.navigateTo('/impact')">Impacts</a> </li>
+                <li><a href="javascript:App.navigateTo('/schedule')">Planning</a> </li>
+                <li><a href="javascript:App.navigateTo('/inbox')">Messagerie</a> </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="{{cdn}}/jquery.js"></script> 
+    <script src="{{localhost}}/js/vendor/routing.js"></script>
+    <script src="{{loclahost}}/js/app.js"></script>
+    <script>
+        $(document).ready(function () {
+            if(App){
+                App.init();
+            }
+        });
+    </script>
+</body>
+</html>
