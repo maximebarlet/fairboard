@@ -39,4 +39,11 @@
 .partners-logo{
     display: flex;
     background-color: #5D7963;
+    justify-content: space-around;
 }
+
+.partners-logo img{
+    width: fit-content;
+}
+
+/*
