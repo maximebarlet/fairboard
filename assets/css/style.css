@@ -217,8 +217,20 @@ h2{
     font-weight: 900;
 }
 
-/* HERO STYLE */
+@media (orientation: portrait){
 
+}
+
+/* HERO STYLE */
+@media (orientation: portrait){
+    .animation-headline {
+        font-size: 3rem;
+        line-height: 1.2;
+        font-weight: 700;
+        color: #000;
+        padding-top: 10vh;
+      }
+}
 .hero{
     height: 80vh;
     margin-right: 10vw;
