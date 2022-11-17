@@ -378,10 +378,12 @@ button {
     background-color: #5D7963;
     height: 100vh;
     overflow-y: hidden;
+    position: fixed;
 }
 .viewer{
     width: 80%;
     height: 100vh;
+    margin-left: 20%;
 }
 .viewer #impacts{
     height: 100vh;
