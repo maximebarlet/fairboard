@@ -23,7 +23,7 @@
         window.onload = function(){
             document.getElementById('output').innerHTML = startsWithN.length;
             startsWithN.forEach(element => console.log(localStorage.getItem(element)));
-            document.getElementById('output2').innerHTML = startsWithN.forEach(element => JSON.stringify(localStorage.getItem(element)));
+            document.getElementById('output2').innerHTML = startsWithN.forEach(element => localStorage.getItem(JSON.stringify(element)));
         }
     </script>
     <div class="sidebar">
