@@ -79,10 +79,11 @@ h2{
 
 .values .values-description{
     display: flex;
+    justify-content: space-between;
 }
 .values .values-description .value-box{
     background-color: #5D7963;
-    width: 33%;
+    width: 30%;
 }
 
 /* FEATURES STYLE */
