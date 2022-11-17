@@ -376,7 +376,9 @@ button {
 .sidebar{
     width: 20%;
     background-color: #5D7963;
+    height: 100vh;
 }
 .viewer{
     width: 80%;
+    height: 100vh;
 }
