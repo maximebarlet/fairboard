@@ -22,7 +22,7 @@
         startsWithN.forEach(element => localStorage.getItem(element));
         window.onload = function(){
             document.getElementById('output').innerHTML = startsWithN.length;
-            console.log(startsWithN.forEach(element => localStorage.getItem(element)));
+            startsWithN.forEach(element => console.log(localStorage.getItem(element)));
             document.getElementById('output2').innerHTML = p;
         }
     </script>
