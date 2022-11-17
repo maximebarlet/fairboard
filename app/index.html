@@ -26,7 +26,7 @@
             for (let index = 0; index < startsWithN.length; ++index) {
                 const element = startsWithN[index];
                 console.log(element);
-                document.getElementById('output2').innerHTML = '<span>' + JSON.stringify(localStorage.getItem(element)) + '</span>';
+                document.getElementById('output2').innerHTML = '<span>' + JSON.parse(localStorage.getItem(element)) + '</span>';
             }
         }
     </script>
