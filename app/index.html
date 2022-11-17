@@ -13,6 +13,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/BrowserFS/2.0.0/browserfs.min.js" integrity="sha512-mz0EI+Ay1uIJP7rZEX8C/JlTAcHRIQ8Sny4vxmmj8MSzDJgG9NxxY2pUmOGv1lO7imFIFMyjjCzEXEywNgaUdQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body style="display: flex;">
+    <script>
+        var x = localStorage.length;
+        var y = Object.keys(localStorage);
+        const startsWithN = y.filter((yy) => yy.startsWith("post"));
+
+        console.log(startsWithN);
+        startsWithN.forEach(element => console.log(localStorage.getItem(element)));
+
+        document.getElementById('output').innerHTML = x;
+    </script>
     <div class="sidebar">
         <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Créer un post</a>
         <a href="#impacts">Impacts</a>
@@ -22,6 +32,7 @@
     <div class="viewer">
         <div id="impacts">
             <h2>Impacts</h2>
+            <h3>Vous avez posté<p id="output"></p></h3>
         </div>
         <div id="schedule">
             <h2>Planning</h2>
@@ -82,17 +93,6 @@
         </div>
     </div>
     <script>
-        var x = localStorage.length;
-        var y = Object.keys(localStorage);
-        const startsWithN = y.filter((yy) => yy.startsWith("post"));
-
-        console.log(startsWithN);
-        startsWithN.forEach(element => console.log(localStorage.getItem(element)));
-
-        function getPosts(params) {
-            
-        }
-
         function handleFormSubmit(event) {
             event.preventDefault();
             
