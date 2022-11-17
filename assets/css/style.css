@@ -60,4 +60,5 @@ body{
 }
 .values .values-description .value-box{
     background-color: #5D7963;
+    width: 33%;
 }
