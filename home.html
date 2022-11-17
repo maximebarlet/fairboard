@@ -25,6 +25,14 @@
             </ul>
             <a class="cta" href="app/maintenance.html">Démarrer mon essai gratuit</a>
         </nav>
+        <nav-mobile>
+            <button class="menu" type="button">
+                <div class="menu__item--1"><a href="#concept">Notre concept</a></div>
+                <div class="menu__item--2"><a href="#values">Nos valeurs</a></div>
+                <div class="menu__item--3"><a href="#features">Fonctionnalités</a></div>
+              </button>
+              <aside></aside>
+        </nav-mobile>
     </div>
     <div class="hero">
         <h1 class="animation-headline slide">
@@ -176,6 +184,39 @@ Il est nécessaire de changer notre manière de communiquer, pour un futur plus 
 		$newWord.removeClass('is-hidden').addClass('is-visible');
 	}
   
+});
+//Burger menu animation with greensock / gsap
+var menu = $(".menu"),
+    menuitem1 = $(".menu__item--1"),
+    menuitem2 = $(".menu__item--2"),
+    menuitem3 = $(".menu__item--3"),
+    speed = 0.15;
+
+//instantiate  timeline
+var tl = new TimelineLite({paused:true}); //pause default
+
+//collapse menu
+tl.to(menuitem1, speed, {top: 20, ease:Quint.easeOut}, "label--1") 
+  .to(menuitem3, speed, {top: -20, ease:Quint.easeOut}, "label--1")
+
+//rotate all items
+  .to([menuitem1, menuitem2, menuitem3], speed, {rotation: -90, ease:Quint.easeOut})
+
+//expand menu
+  .to(menuitem1, speed, {left: 20, ease:Quint.easeOut}, "label--2")
+  .to(menuitem3, speed, {right: 20, ease:Quint.easeOut}, "label--2"); 
+
+
+// play timeline on click, reverse animation if active
+menu.click(function() {
+    $(this).toggleClass('active');
+
+    if ( $(this).hasClass("active") ) {
+        tl.play(); 
+    }  
+    else {
+        tl.reverse(); 
+    }
 });
 </script>
 </body>
