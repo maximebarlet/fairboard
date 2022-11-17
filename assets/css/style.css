@@ -384,7 +384,7 @@ button {
     width: 80%;
     height: 100vh;
     margin-left: 20%;
-    overflow-x: hidden;
+    overflow-y: hidden;
 }
 .viewer #impacts{
     height: 100vh;
