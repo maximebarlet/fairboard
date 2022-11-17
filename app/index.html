@@ -101,12 +101,10 @@
 
         const content = 'Some content!';
 
-        fs.writeFile('posts/json.json', formJSON, err => {
-        if (err) {
-            console.error(err);
-        }
-        // file written successfully
-        });
+        // Put the object into storage
+        localStorage.setItem('testObject', JSON.stringify(formJSON));
+        
+        var retrievedObject = localStorage.getItem('testObject');
 
         const results = document.querySelector('.results pre');
         results.innerText = JSON.stringify(formJSON, null, 2);
