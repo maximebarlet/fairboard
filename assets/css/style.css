@@ -23,6 +23,7 @@ h2{
     overflow: hidden;
     vertical-align: top;
     padding: 0;
+    color: #5D7963;
   }
   .animation-headline.slide b {
     opacity: 0;
