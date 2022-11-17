@@ -39,7 +39,7 @@ body{
 /* PARTNERS STYLE */
 
 .partners{
-    width: 100%;
+    width: 100vw;
 }
 .partners-logo{
     display: flex;
