@@ -94,6 +94,6 @@ body{
     color: #FFFFFF;
     width: 50%;
 }
-.features .features-description .row:nth-child(2) .feature-box:nth-child(2),.features .features-description .row:nth-child(1) .feature-box:nth-child(1){
+.features .features-description .row:nth-child(2) .feature-box:nth-child(1),.features .features-description .row:nth-child(1) .feature-box:nth-child(2){
     width: 50%;
 }
