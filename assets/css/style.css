@@ -3,6 +3,10 @@ body{
     margin: 0px !important;
     overflow-x: hidden;
 }
+
+h2{
+    font-weight: 400;
+}
 /* HEADER STYLE */
 .header{
     margin-right: 10vw;
