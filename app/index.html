@@ -87,7 +87,12 @@
         const startsWithN = y.filter((yy) => yy.startsWith("post"));
 
         console.log(startsWithN);
-        console.log(startsWithN.every);
+        startsWithN.forEach(element => console.log(element));
+
+        function getPosts(params) {
+            
+        }
+
         function handleFormSubmit(event) {
             event.preventDefault();
             
