@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/maximebarlet/fairboard/issues"
   },
-  "homepage": "https://github.com/maximebarlet/fairboard#readme"
+  "homepage": "https://github.com/maximebarlet/fairboard#readme",
+  "dependencies": {
+    "fs-js": "^1.0.6"
+  }
 }
